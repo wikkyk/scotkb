@@ -1,0 +1,43 @@
+Scottish keyboard layouts for XKB
+
+This is a pair (QWERTY and Dvorak) of keyboard layouts for XKB
+(Xorg/Wayland) for typing in Gaelic (Gàidhlig), Scots, and English.
+
+The standard British layout is augumented with long vowels (with grave
+accent) and yogh accessible via Alt Gr. A number of commonly-used
+diacritics are also made available as dead keys via Alt Gr.
+
+Main bits:
+
+altgr-aoeui = àòèùì
+shift-altgr-aoeui = ÀÒÈÙÌ
+
+altgr-z = ȝ (yogh)
+shift-altgr-z = Ȝ (capital yogh)
+
+shift-` = ¬
+altgr-` = |
+shift-altgr-` = ` (dead grave)
+
+shift-2 = "
+altgr-2 = ¨ (dead diaeresis)
+
+shift-3 = £
+
+altgr-4 = €
+
+altgr-6 = ^ (dead circumflex)
+
+shift-' = @
+altgr-' = ´ (dead acute)
+
+shift-# = ~
+altgr-# = ~ (dead tilde)
+
+alt-, = ¸ (dead cedilla)
+
+To install:
+
+cp scot /usr/share/X11/xkb/symbols/ (modify as appropriate)
+setxkbmap scot (or setxkbmap scot dvorak).
+
